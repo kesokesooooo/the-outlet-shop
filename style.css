@@ -278,101 +278,16 @@ color: darkblue;
 color: crimson;
 }
 
-#sm-banner .banner-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-image: url(dmodlegirl.jpg);
-    min-width: 580px;
-    height: 50vh;
-    background-size: cover;
-    background-position: center;
-    padding: 30px;
-}
-
-#sm-banner{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-#sm-banner h4{
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-weight: 600;
-}
-
-#sm-banner h2{
-    color: white;
-    font-size: 28px;
-    font-weight: 800;
-}
-
-#sm-banner{
-    color: white;
-    font-size: 28px;
-    font-weight: 500;
-    padding-bottom:15px ;
-}
-
-
-#sm-banner .banner-box2{
-background-image: url(cloth.jpg);
-
-}
-
-#sm-banner .banner-box2 h2{
-    color: white;
-}
-
-#sm-banner .banner-box2 h4{
-    color: white;
-}
-
-
-#banner3 .banner-box{
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-padding: 0  80px;
-margin: 20px;
-}
-
-#banner3 .banner-box{
-    display: flex;
-  flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    min-width: 20%;
-    height: 30vh;
-    padding: 20px;
-
-}
 
 
 
-#banner3 h2{
-    color: white;
-    font-weight: 900;
-     font-size: 22px;
-}
 
 
-#banner3 h3{
-    color: black;
-    font-weight: 800;
-    font-size: 15px;
-}
 
-#banner3 .banner-box2{
-background-image:url(cherry.jpg) ;
-}
-#banner3 .banner-box3{
-    background-image:url(model22girl.jpg) ;
-    }
-    #banner3 .banner-box1{
-        background-image: url(upthsi.jpg);
-    }
+
+
+
+
 
  #newsletter{
 display: flex;
