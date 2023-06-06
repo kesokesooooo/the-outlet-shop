@@ -136,39 +136,35 @@ flex-direction: column;
     font-size: 15px;
 }
 
-
-#feture{
+#feture {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start; /* Updated property */
     flex-wrap: wrap;
-}
-
-#feture .fe-box{
+  }
+  
+  #feture .fe-box {
     width: 180px;
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
     border: 1px solid;
-    margin: 15px 0;
+    margin: 15px 10px;
     border-radius: 30%;
-} 
-
-#feture .fe-box:hover{
-    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.03);
-} 
-
-#feture .fe-box img{
-width: 100%;
-margin-bottom: 10px;
-}
-#feture .fe-box h6{
-    padding: 9px  8px 6px 8px;
+  } 
+  
+  #feture .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #feture .fe-box h6 {
+    padding: 9px 8px 6px 8px;
     border-radius: 4px;
     color: rgb(12, 50, 134);
     background-color: bisque;
     display: inline-block;
-}
+  }
 
 
 #product1{
@@ -412,42 +408,28 @@ width: 100%;
             }
 
 
- @media (max-width:799px){
-   #navbar{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    right: -300px;
-    height: 100vh;
-    width: 300;
-    background-color: beige;
-    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
-    padding: 80px 0 0 10px;
-   }
-
- #navbar .active{
-right: 0px;
-   }  
-
-#navbar li{
-    margin-bottom: 25px;
-}
-
-
-#mobile{
-    display: flex;
-    align-items: center;
-}
-#mobile i{
-    color: black;
-    font-size: 24px;
-    padding-left:20px ;
-}
-
-}
+            @media (min-width: 400px) {
+                #feture {
+                    flex-wrap: nowrap;
+                    overflow-x: auto;
+                    justify-content: flex-start; 
+                  }
+                
+                  #feture .fe-box {
+                    width: 100px;
+                    padding: 10px 8px;
+                    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.03);
+                    margin: 10px 0; 
+                    border-radius: 20%;
+                  }
+                  
+                  #feture .fe-box h6 {
+                    padding: 6px 4px 3px 4px;
+                    font-size: 12px;
+                  }
+                
+                }
+              
 
 
 
