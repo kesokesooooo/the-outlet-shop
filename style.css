@@ -139,7 +139,7 @@ flex-direction: column;
 #feture {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Updated property */
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
   
@@ -237,7 +237,6 @@ color: olivedrab;
     bottom: 20px;
     right: 10px;
 }
-
 #product1  .procont{
     display: flex;
     justify-content: space-between;
@@ -270,15 +269,86 @@ color: darkblue;
     padding: 10px 0;
 }
 
+
+.banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    justify-self: center; 
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+  }
+  
+
 #banner h2 span{
-color: crimson;
+    color: brown;
+}
+
+#product1  .procont{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+    
+#sm-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.banner-box, .banner-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+.banner-box {
+    background-image: url(dmodlegirl.jpg);
+}
+
+.banner-box2 {
+    background-image: url(cloth.jpg);
+}
+
+#sm-banner h4, #sm-banner h2, #sm-banner span {
+    color: white;
+}
+
+#sm-banner h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#sm-banner h2 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span {
+    font-size: 28px;
+    font-weight: 500;
+    padding-bottom: 15px;
 }
 
 
 
+#mobile{
+    display: none;
+    align-items: center;
 
-
-
+}
 
 
 
@@ -408,29 +478,6 @@ width: 100%;
             }
 
 
-            @media (min-width: 400px) {
-                #feture {
-                    flex-wrap: nowrap;
-                    overflow-x: auto;
-                    justify-content: flex-start; 
-                  }
-                
-                  #feture .fe-box {
-                    width: 100px;
-                    padding: 10px 8px;
-                    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.03);
-                    margin: 10px 0; 
-                    border-radius: 20%;
-                  }
-                  
-                  #feture .fe-box h6 {
-                    padding: 6px 4px 3px 4px;
-                    font-size: 12px;
-                  }
-                
-                }
-              
-
 
 
 
@@ -448,9 +495,66 @@ width: 100%;
 
 
 /* @media chavamato */
+ 
 
+@media (max-width:799px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: aliceblue;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2);
+        padding:80px 0 0 14px ;
+        transition: 0.3s;
+    }
 
+    #navbar .active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom:25px ;
+    }
 
+#mobile{
+    display: flex;
+    align-items: center;
+
+}
+
+#mobile i {
+    color: black;
+    font-size: 24px;
+    padding-left: 20px;
+}
+#close{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: black;
+    font-size: 24px;
+}
+    #lg-bag{
+        display: none;
+    }
+    #herro{
+        background-image: url("herro.jpeg");
+        width: 100%;
+           height: 90vh;
+           background-position: top 25%  right 0 ;
+       background-size: cover;
+       padding: 0 30px;
+       display: flex;
+       align-items: flex-start;
+       justify-content: center;
+       flex-direction: column;
+       }
+}
 
 
 
@@ -998,4 +1102,10 @@ margin-bottom: 30px;
         width: 100px;
      height: 31px;
         font-weight: 300;
+    }
+
+
+    .small-image-colum img{
+        width: 100%;
+        height: 130px;
     }
